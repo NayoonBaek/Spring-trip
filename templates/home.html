@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>여행지 추천</title>
+    <style>
+
+        html::after {
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: url("https://content.presspage.com/uploads/685/1920_paragliding3-779643.jpg?10000");
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.7;
+            background-size: cover;
+
+        }
+
+
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+        .buttons{
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input{
+            font-size: 30px;
+            text-shadow: 2px 2px 2px gray;
+            color : white;
+            border:none;
+            cursor:pointer;
+            width: 300px;
+            height: 300px;
+            margin-left:16px;
+            vertical-align:middle;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 1px gray
+        }
+
+
+
+        .spring{
+            background-image:url(https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxUGnK%2FbtrJSmYYVQ0%2FwuctjLmh7hevnE4zOyHbl1%2Fimg.jpg);
+            background-size: cover;
+
+        }
+        .spring:hover{
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxUGnK%2FbtrJSmYYVQ0%2FwuctjLmh7hevnE4zOyHbl1%2Fimg.jpg");
+
+        }
+
+
+        .summer{
+            background-image:url(https://gscaltexmediahub.com/wp-content/uploads/2022/04/220420_%EB%B9%84%EC%B9%98%EC%BD%94%EB%B0%8D_2.jpg);
+            background-size: cover;
+
+        }
+        .summer:hover{
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://gscaltexmediahub.com/wp-content/uploads/2022/04/220420_%EB%B9%84%EC%B9%98%EC%BD%94%EB%B0%8D_2.jpg");
+        }
+
+        .fall{
+            background-image:url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg);
+            background-size: cover;
+        }
+        .fall:hover{
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg");
+        }
+
+        .winter{
+            background-image:url(https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7Zdv/image/UjeUHSNbPXGWHOiBh_3bJJflcpw.jpeg);
+            background-size: cover;
+            background-position: left;
+        }
+        .winter:hover{
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7Zdv/image/UjeUHSNbPXGWHOiBh_3bJJflcpw.jpeg");
+        }
+
+    </style>
+
+</head>
+<body class="container">
+<div>
+    <div class="title">
+
+        <h1>이번 계절 어디로 떠나볼까?</h1>
+    </div>
+    <div class="buttons">
+        <input type="button" value="봄" class="spring" onclick="location.href='/springtrip'"/>
+        <input type="button" value="여름" class="summer" onclick="location.href='http://sels-es.shop/'"/>
+        <input type="button" value="가을" class="fall" onclick="location.href='http://alstjq-prac.shop/'"/>
+        <input type="button" value="겨울" class="winter" onclick="location.href='http://sparta4.shop/'"/>
+    </div>
+</div>
+</body>
+</html>
